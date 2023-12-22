@@ -28,47 +28,27 @@ class HomeActivity extends StatelessWidget {
   }
 
   var MyItems = [
-    {"Name": "Sara", "Age": "28", "City": "Stockholm"},
-    {"Name": "Jacob", "Age": "25", "City": "Copenhagen"},
-    {"Name": "Aiden", "Age": "30", "City": "Dublin"},
-    {"Name": "Grace", "Age": "22", "City": "Vienna"},
-    {"Name": "Lucas", "Age": "27", "City": "Amsterdam"},
-    {"Name": "Lily", "Age": "24", "City": "Seville"},
-    {"Name": "Elijah", "Age": "29", "City": "Oslo"},
-    {"Name": "Chloe", "Age": "26", "City": "Athens"},
-    {"Name": "Alexander", "Age": "23", "City": "Helsinki"},
-    {"Name": "Madison", "Age": "31", "City": "Brussels"},
-    {"Name": "Logan", "Age": "21", "City": "Warsaw"},
-    {"Name": "Ella", "Age": "32", "City": "Budapest"},
-    {"Name": "Mason", "Age": "28", "City": "Prague"},
-    {"Name": "Avery", "Age": "25", "City": "Lisbon"},
-    {"Name": "Ryan", "Age": "27", "City": "Edinburgh"},
-    {"Name": "Scarlett", "Age": "29", "City": "Berlin"},
-    {"Name": "Luke", "Age": "26", "City": "Barcelona"},
-    {"Name": "Hannah", "Age": "30", "City": "Paris"},
-    {"Name": "Dylan", "Age": "23", "City": "Rome"},
-    {"Name": "Leah", "Age": "24", "City": "Tokyo"},
-    {"Name": "Rakib", "Age": "20", "City": "Sirajganj"},
-    {"Name": "Alice", "Age": "25", "City": "New York"},
-    {"Name": "Bob", "Age": "30", "City": "London"},
-    {"Name": "Emily", "Age": "22", "City": "Paris"},
-    {"Name": "David", "Age": "28", "City": "Tokyo"},
-    {"Name": "Sophia", "Age": "26", "City": "Sydney"},
-    {"Name": "Michael", "Age": "23", "City": "Berlin"},
-    {"Name": "Olivia", "Age": "27", "City": "Barcelona"},
-    {"Name": "William", "Age": "29", "City": "Toronto"},
-    {"Name": "Ava", "Age": "24", "City": "Rome"},
-    {"Name": "Ethan", "Age": "31", "City": "Seoul"},
-    {"Name": "Mia", "Age": "21", "City": "Mumbai"},
-    {"Name": "Liam", "Age": "32", "City": "Cairo"},
-    {"Name": "Charlotte", "Age": "23", "City": "Rio de Janeiro"},
-    {"Name": "Noah", "Age": "28", "City": "Moscow"},
-    {"Name": "Amelia", "Age": "25", "City": "Bangkok"},
-    {"Name": "James", "Age": "27", "City": "Madrid"},
-    {"Name": "Isabella", "Age": "29", "City": "Los Angeles"},
-    {"Name": "Benjamin", "Age": "26", "City": "Dubai"},
-    {"Name": "Emma", "Age": "30", "City": "Singapore"}
+  {"Name": "Sara", "Age": "28", "City": "Stockholm", "ImageURL": "https://cdn.pixabay.com/photo/2018/08/28/13/29/avatar-3637561_960_720.png"},
+  {"Name": "Jacob", "Age": "25", "City": "Copenhagen", "ImageURL": "https://cdn.pixabay.com/photo/2017/03/01/22/18/avatar-2109804_960_720.png"},
+  {"Name": "Aiden", "Age": "30", "City": "Dublin", "ImageURL": "https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_640.png"},
+  {"Name": "Grace", "Age": "22", "City": "Vienna", "ImageURL": "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027369_640.png"},
+  {"Name": "Lucas", "Age": "27", "City": "Amsterdam", "ImageURL": "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_960_720.png"},
+  {"Name": "Lily", "Age": "24", "City": "Seville", "ImageURL": "https://res.cloudinary.com/dz209s6jk/image/upload/v1663222594/Avatars/rmxkvbdtrp5v0rcosrev.png"},
+  {"Name": "Elijah", "Age": "29", "City": "Oslo", "ImageURL": "https://symbola.net/wp-content/uploads/2021/03/avatar2.png"},
+  {"Name": "Chloe", "Age": "26", "City": "Athens", "ImageURL": "https://cdn.pixabay.com/photo/2018/08/28/13/29/avatar-3637561_960_720.png"},
+  {"Name": "Alexander", "Age": "23", "City": "Helsinki", "ImageURL": "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_960_720.png"},
+  {"Name": "Madison", "Age": "31", "City": "Brussels", "ImageURL": "https://res.cloudinary.com/dz209s6jk/image/upload/v1663222594/Avatars/rmxkvbdtrp5v0rcosrev.png"},
+  {"Name": "Logan", "Age": "21", "City": "Warsaw", "ImageURL": "https://res.cloudinary.com/dz209s6jk/image/upload/v1663222594/Avatars/rmxkvbdtrp5v0rcosrev.png"},
+  {"Name": "Ella", "Age": "32", "City": "Budapest", "ImageURL": "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_960_720.png"},
+  {"Name": "Mason", "Age": "28", "City": "Prague", "ImageURL": "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_960_720.png"},
+  {"Name": "Avery", "Age": "25", "City": "Lisbon", "ImageURL": "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_960_720.png"},
+    {"Name": "Ryan", "Age": "27", "City": "Edinburgh", "ImageURL": "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_960_720.png"},
+    {"Name": "Scarlett", "Age": "29", "City": "Berlin", "ImageURL": "https://cdn.pixabay.com/photo/2018/08/28/13/29/avatar-3637561_960_720.png"},
+    {"Name": "Luke", "Age": "26", "City": "Barcelona", "ImageURL": "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027369_640.png"},
+    {"Name": "Hannah", "Age": "30", "City": "Paris", "ImageURL": "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027369_640.png"},
+
   ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -87,22 +67,24 @@ class HomeActivity extends StatelessWidget {
           )
         ],
       ),
-      body: ListView.builder(
+      body: GridView.builder(
         itemCount: MyItems.length,
         itemBuilder: (context, index) {
           return InkWell(
-            child: ListTile(
-              title: Text(MyItems[index]["Name"]!),
-              titleTextStyle:
-                  TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
-              leading: Image.asset("images/44.png"),
-              subtitle: Text(MyItems[index]["City"]!),
-              onTap: () {
-                MySnackber(context, MyItems[index]["Age"].toString());
-              },
+            child: Card(
+              child: ListTile(
+                title: Text(MyItems[index]["Name"]!),
+                titleTextStyle:
+                    TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                leading: Image.network(MyItems[index]["ImageURL"].toString()),
+                subtitle: Text(MyItems[index]["City"]!),
+                onTap: () {
+                  MySnackber(context, MyItems[index]["Age"].toString());
+                },
+              ),
             ),
           );
-        },
+        }, gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,crossAxisSpacing:5,mainAxisSpacing:5,mainAxisExtent: 80 ),
       ),
       drawer: Drawer(),
       bottomNavigationBar: BottomNavigationBar(
