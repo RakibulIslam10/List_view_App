@@ -19,8 +19,12 @@ class rakib extends StatelessWidget {
 
 class HomeActivity extends StatelessWidget {
   MySnackber(context, String msg) {
-    return ScaffoldMessenger.of(context)
-        .showSnackBar(SnackBar(content: Text("$msg")));
+    return ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text("$msg"),
+        backgroundColor: Colors.lightGreen,
+      ),
+    );
   }
 
   var MyItems = [
@@ -70,7 +74,7 @@ class HomeActivity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Listview App"),
+        title: Text("Student data"),
         backgroundColor: Colors.lightGreen,
         leading: Padding(
           padding: const EdgeInsets.only(left: 15),
@@ -86,13 +90,17 @@ class HomeActivity extends StatelessWidget {
       body: ListView.builder(
         itemCount: MyItems.length,
         itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(MyItems[index]["Name"]!),
-            leading: Icon(Icons.person),
-            subtitle: Text(MyItems[index]["City"]!),
-            onTap: () {
-              MySnackber(context, MyItems[index]["Age"].toString());
-            },
+          return InkWell(
+            child: ListTile(
+              title: Text(MyItems[index]["Name"]!),
+              titleTextStyle:
+                  TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+              leading: Image.asset("images/44.png"),
+              subtitle: Text(MyItems[index]["City"]!),
+              onTap: () {
+                MySnackber(context, MyItems[index]["Age"].toString());
+              },
+            ),
           );
         },
       ),
